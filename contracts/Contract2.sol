@@ -3,26 +3,54 @@ pragma solidity >=0.8.17 <0.9.0;
 
 contract Contract2 {
   address public owner = msg.sender;
-  string public flag1;
-  string private flag2 = "testflag";
+  mapping(uint16 => string) private flags;
   address public friend;
+  bytes public codeword = "please";
 
   // this function runs when the contract is deployed
-  constructor(string memory flagInput) {
-    // set flag
-    flag1 = flagInput;
+  constructor(string[] memory flagInput) {
+    // set flags
+    flags[2] = flagInput[23];
+    flags[5] = flagInput[9];
+    flags[4] = flagInput[18];
+    flags[3] = flagInput[13];
+    flags[1] = flagInput[5];
   }
 
-  function constructFlag (string memory flag) internal pure returns (string memory) {
+  function assembleFlag (string memory flag) internal pure returns (string memory) {
     return string.concat("capctf{", flag, "}");
   }
 
-  function getFlag2 () external view isFriend returns(string memory) {
-    return constructFlag(flag2);
+  function getFlag2 () external payable returns (string memory) {
+    uint cost = 1e15;
+    require(msg.value >= cost, "Not enough Goerli ETH was sent.");
+    return assembleFlag(flags[2]);
   }
 
-  function setFlag1 (string memory flg) external ownerOnly {
-    flag1 = flg;
+  function actuallyGetFlag3 () internal view returns (string memory) {
+    return assembleFlag(flags[3]);
+  }
+
+  function getFlag3 (bytes memory codewordArg) external view returns (string memory) {
+    require(keccak256(codeword) == keccak256(codewordArg), "Incorrect codeword");
+    return actuallyGetFlag3();
+  }
+
+  function getFlag4 () external view isFriend returns (string memory) {
+    return assembleFlag(flags[4]);
+  }
+
+  function isContract (address _addr) internal view returns (bool) {
+    uint32 size;
+    assembly {
+      size := extcodesize(_addr)
+    }
+    return (size > 0);
+  }
+
+  function getFlag5 () external view returns (string memory) {
+    require(isContract(msg.sender));
+    return assembleFlag(flags[5]);
   }
   
   modifier isFriend() {
