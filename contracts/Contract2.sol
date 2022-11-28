@@ -4,6 +4,7 @@ pragma solidity >=0.8.17 <0.9.0;
 contract Contract2 {
   address public owner = msg.sender;
   mapping(uint16 => string) private flags;
+  mapping(address => bool) private paid;
   address public friend;
   bytes public codeword = "proofofstake";
 
@@ -26,10 +27,15 @@ contract Contract2 {
     return assembleFlag(flags[1]);
   }
 
-  function payToWin () external payable returns (string memory) {
+  function payToWinFlag () public view returns (string memory) {
+    require(paid[msg.sender] == true, "Sender has not paid to view the flag.");
+    return assembleFlag(flags[2]);
+  }
+
+  function payToWin () external payable {
     uint cost = 1e15;
     require(msg.value >= cost, "Not enough Goerli ETH was sent.");
-    return assembleFlag(flags[2]);
+    paid[msg.sender] = true;
   }
 
   function actuallyGetFlag () internal view returns (string memory) {
