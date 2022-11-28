@@ -1,16 +1,17 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.8.17 <0.9.0;
 
+interface Contract2I{
+  function getFlag4 () external view returns (string memory);
+}
+
 contract Contract1 {
   address public owner = msg.sender;
-  string public flag;
 
-  // this function runs when the contract is deployed
-  constructor(string memory flagInput) {
-    // set flag
-    flag = flagInput;
+  function getFlag4 (address addr) external view returns (string memory) {
+    Contract2I c2 = Contract2I(addr);
+    return c2.getFlag4();
   }
-
 
   modifier ownerOnly() {
     require(

@@ -8,17 +8,22 @@ contract Contract2 {
   bytes public codeword = "please";
 
   // this function runs when the contract is deployed
-  constructor(string[] memory flagInput) {
+  constructor(string[] memory flagInput, address friendAddr) {
+    friend = friendAddr;
     // set flags
-    flags[2] = flagInput[23];
-    flags[5] = flagInput[9];
-    flags[4] = flagInput[18];
-    flags[3] = flagInput[13];
-    flags[1] = flagInput[5];
+    flags[2] = flagInput[1];
+    flags[5] = flagInput[93];
+    flags[4] = flagInput[59];
+    flags[3] = flagInput[56];
+    flags[1] = flagInput[23];
   }
 
   function assembleFlag (string memory flag) internal pure returns (string memory) {
     return string.concat("capctf{", flag, "}");
+  }
+
+  function getFlag1 () external view returns (string memory) {
+    return assembleFlag(flags[1]);
   }
 
   function getFlag2 () external payable returns (string memory) {
