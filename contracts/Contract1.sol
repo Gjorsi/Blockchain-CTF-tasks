@@ -2,15 +2,15 @@
 pragma solidity >=0.8.17 <0.9.0;
 
 interface Contract2I{
-  function getFlag4 () external view returns (string memory);
+  function contractLoophole () external view returns (string memory);
 }
 
 contract Contract1 {
   address public owner = msg.sender;
 
-  function getFlag4 (address addr) external view returns (string memory) {
+  function callFriendContract (address addr) external view returns (string memory) {
     Contract2I c2 = Contract2I(addr);
-    return c2.getFlag4();
+    return c2.contractLoophole();
   }
 
   modifier ownerOnly() {

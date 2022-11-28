@@ -5,7 +5,7 @@ contract Contract2 {
   address public owner = msg.sender;
   mapping(uint16 => string) private flags;
   address public friend;
-  bytes public codeword = "please";
+  bytes public codeword = "proofofstake";
 
   // this function runs when the contract is deployed
   constructor(string[] memory flagInput, address friendAddr) {
@@ -22,26 +22,26 @@ contract Contract2 {
     return string.concat("capctf{", flag, "}");
   }
 
-  function getFlag1 () external view returns (string memory) {
+  function flagOnAChain () external view returns (string memory) {
     return assembleFlag(flags[1]);
   }
 
-  function getFlag2 () external payable returns (string memory) {
+  function payToWin () external payable returns (string memory) {
     uint cost = 1e15;
     require(msg.value >= cost, "Not enough Goerli ETH was sent.");
     return assembleFlag(flags[2]);
   }
 
-  function actuallyGetFlag3 () internal view returns (string memory) {
+  function actuallyGetFlag () internal view returns (string memory) {
     return assembleFlag(flags[3]);
   }
 
-  function getFlag3 (bytes memory codewordInput) external view returns (string memory) {
+  function readTheContract (bytes memory codewordInput) external view returns (string memory) {
     require(keccak256(codeword) == keccak256(codewordInput), "Incorrect codeword");
-    return actuallyGetFlag3();
+    return actuallyGetFlag();
   }
 
-  function getFlag4 () external view isFriend returns (string memory) {
+  function contractLoophole () external view isFriend returns (string memory) {
     return assembleFlag(flags[4]);
   }
 
@@ -53,7 +53,7 @@ contract Contract2 {
     return (size > 0);
   }
 
-  function getFlag5 () external view returns (string memory) {
+  function yourTurn () external view returns (string memory) {
     require(isContract(msg.sender));
     return assembleFlag(flags[5]);
   }
