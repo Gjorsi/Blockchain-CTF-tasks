@@ -1,9 +1,9 @@
 {
-  "contractName": "ContractDInterface",
+  "contractName": "ContractEInterface",
   "abi": [
     {
       "inputs": [],
-      "name": "contractLoophole",
+      "name": "yourTurn",
       "outputs": [
         {
           "internalType": "string",
@@ -15,7 +15,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"contractLoophole\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ContractD2.sol\":\"ContractDInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ContractD2.sol\":{\"keccak256\":\"0xebab9bc0f843e1f8028703656bc313cc7b8fb5efb9245c956b5a5cbe99c2a9df\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://330234e1211150ff57f70d42b1841525db472c0f4fdb01dd04f1ac3d0fec5792\",\"dweb:/ipfs/QmeWWTmkh8AkcfmTARbsnhF61RhpAZvHVhCBPo1FS8mnb8\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"yourTurn\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ContractE2.sol\":\"ContractEInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ContractE2.sol\":{\"keccak256\":\"0xfcc1a4d69c4163226220110f995ae56f8c00571fc0a0a8c4da9327f0e65afa4f\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://4c3db86f3931331a2c3eff72800d51471611e90023b1ba2475b6e2bb6949377d\",\"dweb:/ipfs/QmWjiQ2jd3eUwnDw7GHvKfMJc6nTziPfngRrpf7ANZxner\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -23,24 +23,24 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface ContractDInterface{\r\n  function contractLoophole () external view returns (string memory);\r\n}\r\n\r\ncontract ContractD2 {\r\n  function callFriendContract (address addr) external view returns (string memory) {\r\n    ContractDInterface c2 = ContractDInterface(addr);\r\n    return c2.contractLoophole();\r\n  }\r\n}",
-  "sourcePath": "C:\\Users\\cgjorsvi\\Documents\\CoP_Cybersecurity\\CTF\\Julekalender2022\\eth\\Contracts\\contracts\\ContractD2.sol",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface ContractEInterface{\r\n  function yourTurn () external view returns (string memory);\r\n}\r\n\r\ncontract ContractE2 {\r\n  function callFriendContract (address addr) external view returns (string memory) {\r\n    ContractEInterface e2 = ContractEInterface(addr);\r\n    return e2.yourTurn();\r\n  }\r\n}",
+  "sourcePath": "C:\\Users\\cgjorsvi\\Documents\\CoP_Cybersecurity\\CTF\\Julekalender2022\\eth\\Contracts\\contracts\\ContractE2.sol",
   "ast": {
-    "absolutePath": "project:/contracts/ContractD2.sol",
+    "absolutePath": "project:/contracts/ContractE2.sol",
     "exportedSymbols": {
-      "ContractD2": [
-        695
+      "ContractE2": [
+        829
       ],
-      "ContractDInterface": [
-        675
+      "ContractEInterface": [
+        809
       ]
     },
-    "id": 696,
+    "id": 830,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 669,
+        "id": 803,
         "literals": [
           "solidity",
           ">=",
@@ -51,51 +51,51 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "37:32:5"
+        "src": "37:32:7"
       },
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "ContractDInterface",
+        "canonicalName": "ContractEInterface",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 675,
+        "id": 809,
         "linearizedBaseContracts": [
-          675
+          809
         ],
-        "name": "ContractDInterface",
-        "nameLocation": "83:18:5",
+        "name": "ContractEInterface",
+        "nameLocation": "83:18:7",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "functionSelector": "1df12901",
-            "id": 674,
+            "functionSelector": "19b9c320",
+            "id": 808,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
-            "name": "contractLoophole",
-            "nameLocation": "115:16:5",
+            "name": "yourTurn",
+            "nameLocation": "115:8:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 670,
+              "id": 804,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "132:2:5"
+              "src": "124:2:7"
             },
             "returnParameters": {
-              "id": 673,
+              "id": 807,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 672,
+                  "id": 806,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 674,
-                  "src": "158:13:5",
+                  "scope": 808,
+                  "src": "150:13:7",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -103,10 +103,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 671,
+                    "id": 805,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "158:6:5",
+                    "src": "150:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -115,93 +115,93 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "157:15:5"
+              "src": "149:15:7"
             },
-            "scope": 675,
-            "src": "106:67:5",
+            "scope": 809,
+            "src": "106:59:7",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 696,
-        "src": "73:103:5",
+        "scope": 830,
+        "src": "73:95:7",
         "usedErrors": []
       },
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "ContractD2",
+        "canonicalName": "ContractE2",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 695,
+        "id": 829,
         "linearizedBaseContracts": [
-          695
+          829
         ],
-        "name": "ContractD2",
-        "nameLocation": "189:10:5",
+        "name": "ContractE2",
+        "nameLocation": "181:10:7",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 693,
+              "id": 827,
               "nodeType": "Block",
-              "src": "286:96:5",
+              "src": "278:88:7",
               "statements": [
                 {
                   "assignments": [
-                    684
+                    818
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 684,
+                      "id": 818,
                       "mutability": "mutable",
-                      "name": "c2",
-                      "nameLocation": "312:2:5",
+                      "name": "e2",
+                      "nameLocation": "304:2:7",
                       "nodeType": "VariableDeclaration",
-                      "scope": 693,
-                      "src": "293:21:5",
+                      "scope": 827,
+                      "src": "285:21:7",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                        "typeString": "contract ContractDInterface"
+                        "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                        "typeString": "contract ContractEInterface"
                       },
                       "typeName": {
-                        "id": 683,
+                        "id": 817,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 682,
-                          "name": "ContractDInterface",
+                          "id": 816,
+                          "name": "ContractEInterface",
                           "nameLocations": [
-                            "293:18:5"
+                            "285:18:7"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 675,
-                          "src": "293:18:5"
+                          "referencedDeclaration": 809,
+                          "src": "285:18:7"
                         },
-                        "referencedDeclaration": 675,
-                        "src": "293:18:5",
+                        "referencedDeclaration": 809,
+                        "src": "285:18:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                          "typeString": "contract ContractDInterface"
+                          "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                          "typeString": "contract ContractEInterface"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 688,
+                  "id": 822,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 686,
+                        "id": 820,
                         "name": "addr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 677,
-                        "src": "336:4:5",
+                        "referencedDeclaration": 811,
+                        "src": "328:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -215,18 +215,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 685,
-                      "name": "ContractDInterface",
+                      "id": 819,
+                      "name": "ContractEInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 675,
-                      "src": "317:18:5",
+                      "referencedDeclaration": 809,
+                      "src": "309:18:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ContractDInterface_$675_$",
-                        "typeString": "type(contract ContractDInterface)"
+                        "typeIdentifier": "t_type$_t_contract$_ContractEInterface_$809_$",
+                        "typeString": "type(contract ContractEInterface)"
                       }
                     },
-                    "id": 687,
+                    "id": 821,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -235,15 +235,15 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "317:24:5",
+                    "src": "309:24:7",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                      "typeString": "contract ContractDInterface"
+                      "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                      "typeString": "contract ContractEInterface"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "293:48:5"
+                  "src": "285:48:7"
                 },
                 {
                   "expression": {
@@ -251,33 +251,33 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 689,
-                        "name": "c2",
+                        "id": 823,
+                        "name": "e2",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 684,
-                        "src": "355:2:5",
+                        "referencedDeclaration": 818,
+                        "src": "347:2:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                          "typeString": "contract ContractDInterface"
+                          "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                          "typeString": "contract ContractEInterface"
                         }
                       },
-                      "id": 690,
+                      "id": 824,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "358:16:5",
-                      "memberName": "contractLoophole",
+                      "memberLocation": "350:8:7",
+                      "memberName": "yourTurn",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 674,
-                      "src": "355:19:5",
+                      "referencedDeclaration": 808,
+                      "src": "347:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_string_memory_ptr_$",
                         "typeString": "function () view external returns (string memory)"
                       }
                     },
-                    "id": 691,
+                    "id": 825,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -286,41 +286,41 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "355:21:5",
+                    "src": "347:13:7",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 681,
-                  "id": 692,
+                  "functionReturnParameters": 815,
+                  "id": 826,
                   "nodeType": "Return",
-                  "src": "348:28:5"
+                  "src": "340:20:7"
                 }
               ]
             },
             "functionSelector": "806b6955",
-            "id": 694,
+            "id": 828,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "callFriendContract",
-            "nameLocation": "214:18:5",
+            "nameLocation": "206:18:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 678,
+              "id": 812,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 677,
+                  "id": 811,
                   "mutability": "mutable",
                   "name": "addr",
-                  "nameLocation": "242:4:5",
+                  "nameLocation": "234:4:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 694,
-                  "src": "234:12:5",
+                  "scope": 828,
+                  "src": "226:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -328,10 +328,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 676,
+                    "id": 810,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "234:7:5",
+                    "src": "226:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -341,21 +341,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "233:14:5"
+              "src": "225:14:7"
             },
             "returnParameters": {
-              "id": 681,
+              "id": 815,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 680,
+                  "id": 814,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 694,
-                  "src": "271:13:5",
+                  "scope": 828,
+                  "src": "263:13:7",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -363,10 +363,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 679,
+                    "id": 813,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "271:6:5",
+                    "src": "263:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -375,21 +375,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "270:15:5"
+              "src": "262:15:7"
             },
-            "scope": 695,
-            "src": "205:177:5",
+            "scope": 829,
+            "src": "197:169:7",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 696,
-        "src": "180:205:5",
+        "scope": 830,
+        "src": "172:197:7",
         "usedErrors": []
       }
     ],
-    "src": "37:348:5"
+    "src": "37:332:7"
   },
   "compiler": {
     "name": "solc",
@@ -397,7 +397,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-12-05T12:53:03.136Z",
+  "updatedAt": "2022-12-05T12:53:03.223Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

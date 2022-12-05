@@ -22,8 +22,8 @@ contract ContractC {
     return assembleFlag(flags[3]);
   }
 
-  function readTheContract (bytes memory codewordInput) external view returns (string memory) {
-    require(keccak256(codeword) == keccak256(codewordInput), "Incorrect codeword");
+  function readTheContract (string memory codewordInput) external view returns (string memory) {
+    require(keccak256(codeword) == keccak256(bytes(codewordInput)), "Incorrect codeword");
     return actuallyGetFlag();
   }
 }

@@ -1,5 +1,5 @@
 {
-  "contractName": "ContractD2",
+  "contractName": "ContractE2",
   "abi": [
     {
       "inputs": [
@@ -21,9 +21,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"callFriendContract\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ContractD2.sol\":\"ContractD2\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ContractD2.sol\":{\"keccak256\":\"0xebab9bc0f843e1f8028703656bc313cc7b8fb5efb9245c956b5a5cbe99c2a9df\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://330234e1211150ff57f70d42b1841525db472c0f4fdb01dd04f1ac3d0fec5792\",\"dweb:/ipfs/QmeWWTmkh8AkcfmTARbsnhF61RhpAZvHVhCBPo1FS8mnb8\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506103d9806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063806b695514610030575b600080fd5b61004a60048036038101906100459190610155565b610060565b6040516100579190610212565b60405180910390f35b606060008290508073ffffffffffffffffffffffffffffffffffffffff16631df129016040518163ffffffff1660e01b8152600401600060405180830381865afa1580156100b2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052508101906100db919061035a565b915050919050565b6000604051905090565b600080fd5b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610122826100f7565b9050919050565b61013281610117565b811461013d57600080fd5b50565b60008135905061014f81610129565b92915050565b60006020828403121561016b5761016a6100ed565b5b600061017984828501610140565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b838110156101bc5780820151818401526020810190506101a1565b60008484015250505050565b6000601f19601f8301169050919050565b60006101e482610182565b6101ee818561018d565b93506101fe81856020860161019e565b610207816101c8565b840191505092915050565b6000602082019050818103600083015261022c81846101d9565b905092915050565b600080fd5b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610276826101c8565b810181811067ffffffffffffffff821117156102955761029461023e565b5b80604052505050565b60006102a86100e3565b90506102b4828261026d565b919050565b600067ffffffffffffffff8211156102d4576102d361023e565b5b6102dd826101c8565b9050602081019050919050565b60006102fd6102f8846102b9565b61029e565b90508281526020810184848401111561031957610318610239565b5b61032484828561019e565b509392505050565b600082601f83011261034157610340610234565b5b81516103518482602086016102ea565b91505092915050565b6000602082840312156103705761036f6100ed565b5b600082015167ffffffffffffffff81111561038e5761038d6100f2565b5b61039a8482850161032c565b9150509291505056fea2646970667358221220cabe91449618a353ad704456cbe412ff4b62de631d201e5dc91513d00d5c7d3564736f6c63430008110033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063806b695514610030575b600080fd5b61004a60048036038101906100459190610155565b610060565b6040516100579190610212565b60405180910390f35b606060008290508073ffffffffffffffffffffffffffffffffffffffff16631df129016040518163ffffffff1660e01b8152600401600060405180830381865afa1580156100b2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052508101906100db919061035a565b915050919050565b6000604051905090565b600080fd5b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610122826100f7565b9050919050565b61013281610117565b811461013d57600080fd5b50565b60008135905061014f81610129565b92915050565b60006020828403121561016b5761016a6100ed565b5b600061017984828501610140565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b838110156101bc5780820151818401526020810190506101a1565b60008484015250505050565b6000601f19601f8301169050919050565b60006101e482610182565b6101ee818561018d565b93506101fe81856020860161019e565b610207816101c8565b840191505092915050565b6000602082019050818103600083015261022c81846101d9565b905092915050565b600080fd5b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610276826101c8565b810181811067ffffffffffffffff821117156102955761029461023e565b5b80604052505050565b60006102a86100e3565b90506102b4828261026d565b919050565b600067ffffffffffffffff8211156102d4576102d361023e565b5b6102dd826101c8565b9050602081019050919050565b60006102fd6102f8846102b9565b61029e565b90508281526020810184848401111561031957610318610239565b5b61032484828561019e565b509392505050565b600082601f83011261034157610340610234565b5b81516103518482602086016102ea565b91505092915050565b6000602082840312156103705761036f6100ed565b5b600082015167ffffffffffffffff81111561038e5761038d6100f2565b5b61039a8482850161032c565b9150509291505056fea2646970667358221220cabe91449618a353ad704456cbe412ff4b62de631d201e5dc91513d00d5c7d3564736f6c63430008110033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"callFriendContract\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ContractE2.sol\":\"ContractE2\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ContractE2.sol\":{\"keccak256\":\"0xfcc1a4d69c4163226220110f995ae56f8c00571fc0a0a8c4da9327f0e65afa4f\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://4c3db86f3931331a2c3eff72800d51471611e90023b1ba2475b6e2bb6949377d\",\"dweb:/ipfs/QmWjiQ2jd3eUwnDw7GHvKfMJc6nTziPfngRrpf7ANZxner\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506103d9806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063806b695514610030575b600080fd5b61004a60048036038101906100459190610155565b610060565b6040516100579190610212565b60405180910390f35b606060008290508073ffffffffffffffffffffffffffffffffffffffff166319b9c3206040518163ffffffff1660e01b8152600401600060405180830381865afa1580156100b2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052508101906100db919061035a565b915050919050565b6000604051905090565b600080fd5b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610122826100f7565b9050919050565b61013281610117565b811461013d57600080fd5b50565b60008135905061014f81610129565b92915050565b60006020828403121561016b5761016a6100ed565b5b600061017984828501610140565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b838110156101bc5780820151818401526020810190506101a1565b60008484015250505050565b6000601f19601f8301169050919050565b60006101e482610182565b6101ee818561018d565b93506101fe81856020860161019e565b610207816101c8565b840191505092915050565b6000602082019050818103600083015261022c81846101d9565b905092915050565b600080fd5b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610276826101c8565b810181811067ffffffffffffffff821117156102955761029461023e565b5b80604052505050565b60006102a86100e3565b90506102b4828261026d565b919050565b600067ffffffffffffffff8211156102d4576102d361023e565b5b6102dd826101c8565b9050602081019050919050565b60006102fd6102f8846102b9565b61029e565b90508281526020810184848401111561031957610318610239565b5b61032484828561019e565b509392505050565b600082601f83011261034157610340610234565b5b81516103518482602086016102ea565b91505092915050565b6000602082840312156103705761036f6100ed565b5b600082015167ffffffffffffffff81111561038e5761038d6100f2565b5b61039a8482850161032c565b9150509291505056fea26469706673582212207fa4faf9d5275091c42a200b23aae86f692c39958df451190f923280277a75cf64736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063806b695514610030575b600080fd5b61004a60048036038101906100459190610155565b610060565b6040516100579190610212565b60405180910390f35b606060008290508073ffffffffffffffffffffffffffffffffffffffff166319b9c3206040518163ffffffff1660e01b8152600401600060405180830381865afa1580156100b2573d6000803e3d6000fd5b505050506040513d6000823e3d601f19601f820116820180604052508101906100db919061035a565b915050919050565b6000604051905090565b600080fd5b600080fd5b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000610122826100f7565b9050919050565b61013281610117565b811461013d57600080fd5b50565b60008135905061014f81610129565b92915050565b60006020828403121561016b5761016a6100ed565b5b600061017984828501610140565b91505092915050565b600081519050919050565b600082825260208201905092915050565b60005b838110156101bc5780820151818401526020810190506101a1565b60008484015250505050565b6000601f19601f8301169050919050565b60006101e482610182565b6101ee818561018d565b93506101fe81856020860161019e565b610207816101c8565b840191505092915050565b6000602082019050818103600083015261022c81846101d9565b905092915050565b600080fd5b600080fd5b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610276826101c8565b810181811067ffffffffffffffff821117156102955761029461023e565b5b80604052505050565b60006102a86100e3565b90506102b4828261026d565b919050565b600067ffffffffffffffff8211156102d4576102d361023e565b5b6102dd826101c8565b9050602081019050919050565b60006102fd6102f8846102b9565b61029e565b90508281526020810184848401111561031957610318610239565b5b61032484828561019e565b509392505050565b600082601f83011261034157610340610234565b5b81516103518482602086016102ea565b91505092915050565b6000602082840312156103705761036f6100ed565b5b600082015167ffffffffffffffff81111561038e5761038d6100f2565b5b61039a8482850161032c565b9150509291505056fea26469706673582212207fa4faf9d5275091c42a200b23aae86f692c39958df451190f923280277a75cf64736f6c63430008110033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [
@@ -2670,26 +2670,26 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "180:205:5:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "180:205:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;205:177;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;271:13;293:21;336:4;293:48;;355:2;:19;;;:21;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;348:28;;;205:177;;;:::o;7:75:14:-;40:6;73:2;67:9;57:19;;7:75;:::o;88:117::-;197:1;194;187:12;211:117;320:1;317;310:12;334:126;371:7;411:42;404:5;400:54;389:65;;334:126;;;:::o;466:96::-;503:7;532:24;550:5;532:24;:::i;:::-;521:35;;466:96;;;:::o;568:122::-;641:24;659:5;641:24;:::i;:::-;634:5;631:35;621:63;;680:1;677;670:12;621:63;568:122;:::o;696:139::-;742:5;780:6;767:20;758:29;;796:33;823:5;796:33;:::i;:::-;696:139;;;;:::o;841:329::-;900:6;949:2;937:9;928:7;924:23;920:32;917:119;;;955:79;;:::i;:::-;917:119;1075:1;1100:53;1145:7;1136:6;1125:9;1121:22;1100:53;:::i;:::-;1090:63;;1046:117;841:329;;;;:::o;1176:99::-;1228:6;1262:5;1256:12;1246:22;;1176:99;;;:::o;1281:169::-;1365:11;1399:6;1394:3;1387:19;1439:4;1434:3;1430:14;1415:29;;1281:169;;;;:::o;1456:246::-;1537:1;1547:113;1561:6;1558:1;1555:13;1547:113;;;1646:1;1641:3;1637:11;1631:18;1627:1;1622:3;1618:11;1611:39;1583:2;1580:1;1576:10;1571:15;;1547:113;;;1694:1;1685:6;1680:3;1676:16;1669:27;1518:184;1456:246;;;:::o;1708:102::-;1749:6;1800:2;1796:7;1791:2;1784:5;1780:14;1776:28;1766:38;;1708:102;;;:::o;1816:377::-;1904:3;1932:39;1965:5;1932:39;:::i;:::-;1987:71;2051:6;2046:3;1987:71;:::i;:::-;1980:78;;2067:65;2125:6;2120:3;2113:4;2106:5;2102:16;2067:65;:::i;:::-;2157:29;2179:6;2157:29;:::i;:::-;2152:3;2148:39;2141:46;;1908:285;1816:377;;;;:::o;2199:313::-;2312:4;2350:2;2339:9;2335:18;2327:26;;2399:9;2393:4;2389:20;2385:1;2374:9;2370:17;2363:47;2427:78;2500:4;2491:6;2427:78;:::i;:::-;2419:86;;2199:313;;;;:::o;2518:117::-;2627:1;2624;2617:12;2641:117;2750:1;2747;2740:12;2764:180;2812:77;2809:1;2802:88;2909:4;2906:1;2899:15;2933:4;2930:1;2923:15;2950:281;3033:27;3055:4;3033:27;:::i;:::-;3025:6;3021:40;3163:6;3151:10;3148:22;3127:18;3115:10;3112:34;3109:62;3106:88;;;3174:18;;:::i;:::-;3106:88;3214:10;3210:2;3203:22;2993:238;2950:281;;:::o;3237:129::-;3271:6;3298:20;;:::i;:::-;3288:30;;3327:33;3355:4;3347:6;3327:33;:::i;:::-;3237:129;;;:::o;3372:308::-;3434:4;3524:18;3516:6;3513:30;3510:56;;;3546:18;;:::i;:::-;3510:56;3584:29;3606:6;3584:29;:::i;:::-;3576:37;;3668:4;3662;3658:15;3650:23;;3372:308;;;:::o;3686:434::-;3775:5;3800:66;3816:49;3858:6;3816:49;:::i;:::-;3800:66;:::i;:::-;3791:75;;3889:6;3882:5;3875:21;3927:4;3920:5;3916:16;3965:3;3956:6;3951:3;3947:16;3944:25;3941:112;;;3972:79;;:::i;:::-;3941:112;4062:52;4107:6;4102:3;4097;4062:52;:::i;:::-;3781:339;3686:434;;;;;:::o;4140:355::-;4207:5;4256:3;4249:4;4241:6;4237:17;4233:27;4223:122;;4264:79;;:::i;:::-;4223:122;4374:6;4368:13;4399:90;4485:3;4477:6;4470:4;4462:6;4458:17;4399:90;:::i;:::-;4390:99;;4213:282;4140:355;;;;:::o;4501:524::-;4581:6;4630:2;4618:9;4609:7;4605:23;4601:32;4598:119;;;4636:79;;:::i;:::-;4598:119;4777:1;4766:9;4762:17;4756:24;4807:18;4799:6;4796:30;4793:117;;;4829:79;;:::i;:::-;4793:117;4934:74;5000:7;4991:6;4980:9;4976:22;4934:74;:::i;:::-;4924:84;;4727:291;4501:524;;;;:::o",
-  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface ContractDInterface{\r\n  function contractLoophole () external view returns (string memory);\r\n}\r\n\r\ncontract ContractD2 {\r\n  function callFriendContract (address addr) external view returns (string memory) {\r\n    ContractDInterface c2 = ContractDInterface(addr);\r\n    return c2.contractLoophole();\r\n  }\r\n}",
-  "sourcePath": "C:\\Users\\cgjorsvi\\Documents\\CoP_Cybersecurity\\CTF\\Julekalender2022\\eth\\Contracts\\contracts\\ContractD2.sol",
+  "sourceMap": "172:197:7:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "172:197:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;197:169;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;;263:13;285:21;328:4;285:48;;347:2;:11;;;:13;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;340:20;;;197:169;;;:::o;7:75:14:-;40:6;73:2;67:9;57:19;;7:75;:::o;88:117::-;197:1;194;187:12;211:117;320:1;317;310:12;334:126;371:7;411:42;404:5;400:54;389:65;;334:126;;;:::o;466:96::-;503:7;532:24;550:5;532:24;:::i;:::-;521:35;;466:96;;;:::o;568:122::-;641:24;659:5;641:24;:::i;:::-;634:5;631:35;621:63;;680:1;677;670:12;621:63;568:122;:::o;696:139::-;742:5;780:6;767:20;758:29;;796:33;823:5;796:33;:::i;:::-;696:139;;;;:::o;841:329::-;900:6;949:2;937:9;928:7;924:23;920:32;917:119;;;955:79;;:::i;:::-;917:119;1075:1;1100:53;1145:7;1136:6;1125:9;1121:22;1100:53;:::i;:::-;1090:63;;1046:117;841:329;;;;:::o;1176:99::-;1228:6;1262:5;1256:12;1246:22;;1176:99;;;:::o;1281:169::-;1365:11;1399:6;1394:3;1387:19;1439:4;1434:3;1430:14;1415:29;;1281:169;;;;:::o;1456:246::-;1537:1;1547:113;1561:6;1558:1;1555:13;1547:113;;;1646:1;1641:3;1637:11;1631:18;1627:1;1622:3;1618:11;1611:39;1583:2;1580:1;1576:10;1571:15;;1547:113;;;1694:1;1685:6;1680:3;1676:16;1669:27;1518:184;1456:246;;;:::o;1708:102::-;1749:6;1800:2;1796:7;1791:2;1784:5;1780:14;1776:28;1766:38;;1708:102;;;:::o;1816:377::-;1904:3;1932:39;1965:5;1932:39;:::i;:::-;1987:71;2051:6;2046:3;1987:71;:::i;:::-;1980:78;;2067:65;2125:6;2120:3;2113:4;2106:5;2102:16;2067:65;:::i;:::-;2157:29;2179:6;2157:29;:::i;:::-;2152:3;2148:39;2141:46;;1908:285;1816:377;;;;:::o;2199:313::-;2312:4;2350:2;2339:9;2335:18;2327:26;;2399:9;2393:4;2389:20;2385:1;2374:9;2370:17;2363:47;2427:78;2500:4;2491:6;2427:78;:::i;:::-;2419:86;;2199:313;;;;:::o;2518:117::-;2627:1;2624;2617:12;2641:117;2750:1;2747;2740:12;2764:180;2812:77;2809:1;2802:88;2909:4;2906:1;2899:15;2933:4;2930:1;2923:15;2950:281;3033:27;3055:4;3033:27;:::i;:::-;3025:6;3021:40;3163:6;3151:10;3148:22;3127:18;3115:10;3112:34;3109:62;3106:88;;;3174:18;;:::i;:::-;3106:88;3214:10;3210:2;3203:22;2993:238;2950:281;;:::o;3237:129::-;3271:6;3298:20;;:::i;:::-;3288:30;;3327:33;3355:4;3347:6;3327:33;:::i;:::-;3237:129;;;:::o;3372:308::-;3434:4;3524:18;3516:6;3513:30;3510:56;;;3546:18;;:::i;:::-;3510:56;3584:29;3606:6;3584:29;:::i;:::-;3576:37;;3668:4;3662;3658:15;3650:23;;3372:308;;;:::o;3686:434::-;3775:5;3800:66;3816:49;3858:6;3816:49;:::i;:::-;3800:66;:::i;:::-;3791:75;;3889:6;3882:5;3875:21;3927:4;3920:5;3916:16;3965:3;3956:6;3951:3;3947:16;3944:25;3941:112;;;3972:79;;:::i;:::-;3941:112;4062:52;4107:6;4102:3;4097;4062:52;:::i;:::-;3781:339;3686:434;;;;;:::o;4140:355::-;4207:5;4256:3;4249:4;4241:6;4237:17;4233:27;4223:122;;4264:79;;:::i;:::-;4223:122;4374:6;4368:13;4399:90;4485:3;4477:6;4470:4;4462:6;4458:17;4399:90;:::i;:::-;4390:99;;4213:282;4140:355;;;;:::o;4501:524::-;4581:6;4630:2;4618:9;4609:7;4605:23;4601:32;4598:119;;;4636:79;;:::i;:::-;4598:119;4777:1;4766:9;4762:17;4756:24;4807:18;4799:6;4796:30;4793:117;;;4829:79;;:::i;:::-;4793:117;4934:74;5000:7;4991:6;4980:9;4976:22;4934:74;:::i;:::-;4924:84;;4727:291;4501:524;;;;:::o",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface ContractEInterface{\r\n  function yourTurn () external view returns (string memory);\r\n}\r\n\r\ncontract ContractE2 {\r\n  function callFriendContract (address addr) external view returns (string memory) {\r\n    ContractEInterface e2 = ContractEInterface(addr);\r\n    return e2.yourTurn();\r\n  }\r\n}",
+  "sourcePath": "C:\\Users\\cgjorsvi\\Documents\\CoP_Cybersecurity\\CTF\\Julekalender2022\\eth\\Contracts\\contracts\\ContractE2.sol",
   "ast": {
-    "absolutePath": "project:/contracts/ContractD2.sol",
+    "absolutePath": "project:/contracts/ContractE2.sol",
     "exportedSymbols": {
-      "ContractD2": [
-        695
+      "ContractE2": [
+        829
       ],
-      "ContractDInterface": [
-        675
+      "ContractEInterface": [
+        809
       ]
     },
-    "id": 696,
+    "id": 830,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 669,
+        "id": 803,
         "literals": [
           "solidity",
           ">=",
@@ -2700,51 +2700,51 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "37:32:5"
+        "src": "37:32:7"
       },
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "ContractDInterface",
+        "canonicalName": "ContractEInterface",
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 675,
+        "id": 809,
         "linearizedBaseContracts": [
-          675
+          809
         ],
-        "name": "ContractDInterface",
-        "nameLocation": "83:18:5",
+        "name": "ContractEInterface",
+        "nameLocation": "83:18:7",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
-            "functionSelector": "1df12901",
-            "id": 674,
+            "functionSelector": "19b9c320",
+            "id": 808,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
-            "name": "contractLoophole",
-            "nameLocation": "115:16:5",
+            "name": "yourTurn",
+            "nameLocation": "115:8:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 670,
+              "id": 804,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "132:2:5"
+              "src": "124:2:7"
             },
             "returnParameters": {
-              "id": 673,
+              "id": 807,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 672,
+                  "id": 806,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 674,
-                  "src": "158:13:5",
+                  "scope": 808,
+                  "src": "150:13:7",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2752,10 +2752,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 671,
+                    "id": 805,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "158:6:5",
+                    "src": "150:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2764,93 +2764,93 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "157:15:5"
+              "src": "149:15:7"
             },
-            "scope": 675,
-            "src": "106:67:5",
+            "scope": 809,
+            "src": "106:59:7",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 696,
-        "src": "73:103:5",
+        "scope": 830,
+        "src": "73:95:7",
         "usedErrors": []
       },
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "ContractD2",
+        "canonicalName": "ContractE2",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 695,
+        "id": 829,
         "linearizedBaseContracts": [
-          695
+          829
         ],
-        "name": "ContractD2",
-        "nameLocation": "189:10:5",
+        "name": "ContractE2",
+        "nameLocation": "181:10:7",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 693,
+              "id": 827,
               "nodeType": "Block",
-              "src": "286:96:5",
+              "src": "278:88:7",
               "statements": [
                 {
                   "assignments": [
-                    684
+                    818
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 684,
+                      "id": 818,
                       "mutability": "mutable",
-                      "name": "c2",
-                      "nameLocation": "312:2:5",
+                      "name": "e2",
+                      "nameLocation": "304:2:7",
                       "nodeType": "VariableDeclaration",
-                      "scope": 693,
-                      "src": "293:21:5",
+                      "scope": 827,
+                      "src": "285:21:7",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                        "typeString": "contract ContractDInterface"
+                        "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                        "typeString": "contract ContractEInterface"
                       },
                       "typeName": {
-                        "id": 683,
+                        "id": 817,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 682,
-                          "name": "ContractDInterface",
+                          "id": 816,
+                          "name": "ContractEInterface",
                           "nameLocations": [
-                            "293:18:5"
+                            "285:18:7"
                           ],
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 675,
-                          "src": "293:18:5"
+                          "referencedDeclaration": 809,
+                          "src": "285:18:7"
                         },
-                        "referencedDeclaration": 675,
-                        "src": "293:18:5",
+                        "referencedDeclaration": 809,
+                        "src": "285:18:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                          "typeString": "contract ContractDInterface"
+                          "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                          "typeString": "contract ContractEInterface"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 688,
+                  "id": 822,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 686,
+                        "id": 820,
                         "name": "addr",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 677,
-                        "src": "336:4:5",
+                        "referencedDeclaration": 811,
+                        "src": "328:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -2864,18 +2864,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 685,
-                      "name": "ContractDInterface",
+                      "id": 819,
+                      "name": "ContractEInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 675,
-                      "src": "317:18:5",
+                      "referencedDeclaration": 809,
+                      "src": "309:18:7",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_contract$_ContractDInterface_$675_$",
-                        "typeString": "type(contract ContractDInterface)"
+                        "typeIdentifier": "t_type$_t_contract$_ContractEInterface_$809_$",
+                        "typeString": "type(contract ContractEInterface)"
                       }
                     },
-                    "id": 687,
+                    "id": 821,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2884,15 +2884,15 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "317:24:5",
+                    "src": "309:24:7",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                      "typeString": "contract ContractDInterface"
+                      "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                      "typeString": "contract ContractEInterface"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "293:48:5"
+                  "src": "285:48:7"
                 },
                 {
                   "expression": {
@@ -2900,33 +2900,33 @@
                     "expression": {
                       "argumentTypes": [],
                       "expression": {
-                        "id": 689,
-                        "name": "c2",
+                        "id": 823,
+                        "name": "e2",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 684,
-                        "src": "355:2:5",
+                        "referencedDeclaration": 818,
+                        "src": "347:2:7",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ContractDInterface_$675",
-                          "typeString": "contract ContractDInterface"
+                          "typeIdentifier": "t_contract$_ContractEInterface_$809",
+                          "typeString": "contract ContractEInterface"
                         }
                       },
-                      "id": 690,
+                      "id": 824,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "358:16:5",
-                      "memberName": "contractLoophole",
+                      "memberLocation": "350:8:7",
+                      "memberName": "yourTurn",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 674,
-                      "src": "355:19:5",
+                      "referencedDeclaration": 808,
+                      "src": "347:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_string_memory_ptr_$",
                         "typeString": "function () view external returns (string memory)"
                       }
                     },
-                    "id": 691,
+                    "id": 825,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2935,41 +2935,41 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "355:21:5",
+                    "src": "347:13:7",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
                       "typeString": "string memory"
                     }
                   },
-                  "functionReturnParameters": 681,
-                  "id": 692,
+                  "functionReturnParameters": 815,
+                  "id": 826,
                   "nodeType": "Return",
-                  "src": "348:28:5"
+                  "src": "340:20:7"
                 }
               ]
             },
             "functionSelector": "806b6955",
-            "id": 694,
+            "id": 828,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "callFriendContract",
-            "nameLocation": "214:18:5",
+            "nameLocation": "206:18:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 678,
+              "id": 812,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 677,
+                  "id": 811,
                   "mutability": "mutable",
                   "name": "addr",
-                  "nameLocation": "242:4:5",
+                  "nameLocation": "234:4:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 694,
-                  "src": "234:12:5",
+                  "scope": 828,
+                  "src": "226:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2977,10 +2977,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 676,
+                    "id": 810,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "234:7:5",
+                    "src": "226:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2990,21 +2990,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "233:14:5"
+              "src": "225:14:7"
             },
             "returnParameters": {
-              "id": 681,
+              "id": 815,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 680,
+                  "id": 814,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 694,
-                  "src": "271:13:5",
+                  "scope": 828,
+                  "src": "263:13:7",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -3012,10 +3012,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 679,
+                    "id": 813,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "271:6:5",
+                    "src": "263:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -3024,21 +3024,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "270:15:5"
+              "src": "262:15:7"
             },
-            "scope": 695,
-            "src": "205:177:5",
+            "scope": 829,
+            "src": "197:169:7",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 696,
-        "src": "180:205:5",
+        "scope": 830,
+        "src": "172:197:7",
         "usedErrors": []
       }
     ],
-    "src": "37:348:5"
+    "src": "37:332:7"
   },
   "compiler": {
     "name": "solc",
@@ -3046,7 +3046,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-12-05T12:53:03.130Z",
+  "updatedAt": "2022-12-05T12:53:03.156Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

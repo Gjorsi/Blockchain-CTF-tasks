@@ -18,9 +18,9 @@ contract ContractB {
     return string.concat("capctf{", flag, "}");
   }
 
-  function payToWinFlag () public view returns (string memory) {
-    if (paid[msg.sender]) return assembleFlag(flags[2]);
-    else return "Sender has not paid to view the flag";
+  function payToWinFlag (address contestantAddr) public view returns (string memory) {
+    require(paid[contestantAddr], "Contestant has not paid to view the flag.");
+    return assembleFlag(flags[2]);
   }
 
   function payToWin () external payable {
