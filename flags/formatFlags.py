@@ -25,7 +25,9 @@ print(base64list[59]) #through_public_key
 print(phrases[59])
 print(base64list[93]) #barrier_to_participation
 print(phrases[93])
+print(base64list[11]) #cryptographic_primitive_known
+print(phrases[11])
 
 jsonStr = json.dumps(base64list[:100])
-# print([f'{v} {i}' for i, v in enumerate(phrases[:100])])
+#print([f'{v} {i}' for i, v in enumerate(phrases[:100])])
 print(jsonStr)
