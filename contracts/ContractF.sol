@@ -6,7 +6,7 @@ import "./utils/Strings.sol";
 
 contract ContractF {
   mapping(uint16 => string) private flags;
-  mapping(address => uint64) public balance;
+  mapping(address => uint64) private balance;
 
   constructor(string[] memory flagInput) {
     // set flags
@@ -14,7 +14,7 @@ contract ContractF {
     flags[5] = flagInput[93];
     flags[4] = flagInput[59];
     flags[3] = flagInput[56];
-    flags[6] = flagInput[6];
+    flags[6] = flagInput[11];
     flags[1] = flagInput[23];
   }
 
@@ -37,7 +37,7 @@ contract ContractF {
 
   function checkBalance (address customerAddr) external view returns (string memory) {
     if (balance[customerAddr] > 18e18) {
-      // how did you get all that money?
+      // 18 ETH
       return assembleFlag(flags[6]);
     } else {
       return Strings.toString(balance[customerAddr]);

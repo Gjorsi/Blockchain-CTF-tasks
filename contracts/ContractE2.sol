@@ -6,7 +6,7 @@ interface ContractEInterface{
 }
 
 contract ContractE2 {
-  function callFriendContract (address addr) external view returns (string memory) {
+  function callContract (address addr) external view returns (string memory) {
     ContractEInterface e2 = ContractEInterface(addr);
     return e2.yourTurn();
   }
