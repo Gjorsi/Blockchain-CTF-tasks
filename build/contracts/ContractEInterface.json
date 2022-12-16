@@ -15,7 +15,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"yourTurn\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ContractE2.sol\":\"ContractEInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ContractE2.sol\":{\"keccak256\":\"0xfcc1a4d69c4163226220110f995ae56f8c00571fc0a0a8c4da9327f0e65afa4f\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://4c3db86f3931331a2c3eff72800d51471611e90023b1ba2475b6e2bb6949377d\",\"dweb:/ipfs/QmWjiQ2jd3eUwnDw7GHvKfMJc6nTziPfngRrpf7ANZxner\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"yourTurn\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ContractE2.sol\":\"ContractEInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ContractE2.sol\":{\"keccak256\":\"0x498612aaa834073a2ddaf3bdb691b9d52621608abe7bce34421188c0f0c783b4\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://79b008e9987a6fc178d00860bcc3237803b37137853329605d8c5388e5e6991d\",\"dweb:/ipfs/QmdPqHyosUiHWHktto9GtsVPg611XRShLtETimET94iWdr\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -23,7 +23,7 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface ContractEInterface{\r\n  function yourTurn () external view returns (string memory);\r\n}\r\n\r\ncontract ContractE2 {\r\n  function callFriendContract (address addr) external view returns (string memory) {\r\n    ContractEInterface e2 = ContractEInterface(addr);\r\n    return e2.yourTurn();\r\n  }\r\n}",
+  "source": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity >=0.8.17 <0.9.0;\r\n\r\ninterface ContractEInterface{\r\n  function yourTurn () external view returns (string memory);\r\n}\r\n\r\ncontract ContractE2 {\r\n  function callContract (address addr) external view returns (string memory) {\r\n    ContractEInterface e2 = ContractEInterface(addr);\r\n    return e2.yourTurn();\r\n  }\r\n}",
   "sourcePath": "C:\\Users\\cgjorsvi\\Documents\\CoP_Cybersecurity\\CTF\\Julekalender2022\\eth\\Contracts\\contracts\\ContractE2.sol",
   "ast": {
     "absolutePath": "project:/contracts/ContractE2.sol",
@@ -147,7 +147,7 @@
             "body": {
               "id": 827,
               "nodeType": "Block",
-              "src": "278:88:7",
+              "src": "272:88:7",
               "statements": [
                 {
                   "assignments": [
@@ -159,10 +159,10 @@
                       "id": 818,
                       "mutability": "mutable",
                       "name": "e2",
-                      "nameLocation": "304:2:7",
+                      "nameLocation": "298:2:7",
                       "nodeType": "VariableDeclaration",
                       "scope": 827,
-                      "src": "285:21:7",
+                      "src": "279:21:7",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -176,14 +176,14 @@
                           "id": 816,
                           "name": "ContractEInterface",
                           "nameLocations": [
-                            "285:18:7"
+                            "279:18:7"
                           ],
                           "nodeType": "IdentifierPath",
                           "referencedDeclaration": 809,
-                          "src": "285:18:7"
+                          "src": "279:18:7"
                         },
                         "referencedDeclaration": 809,
-                        "src": "285:18:7",
+                        "src": "279:18:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ContractEInterface_$809",
                           "typeString": "contract ContractEInterface"
@@ -201,7 +201,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 811,
-                        "src": "328:4:7",
+                        "src": "322:4:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -220,7 +220,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 809,
-                      "src": "309:18:7",
+                      "src": "303:18:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_type$_t_contract$_ContractEInterface_$809_$",
                         "typeString": "type(contract ContractEInterface)"
@@ -235,7 +235,7 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "309:24:7",
+                    "src": "303:24:7",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_contract$_ContractEInterface_$809",
@@ -243,7 +243,7 @@
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "285:48:7"
+                  "src": "279:48:7"
                 },
                 {
                   "expression": {
@@ -256,7 +256,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 818,
-                        "src": "347:2:7",
+                        "src": "341:2:7",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_ContractEInterface_$809",
                           "typeString": "contract ContractEInterface"
@@ -267,11 +267,11 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
-                      "memberLocation": "350:8:7",
+                      "memberLocation": "344:8:7",
                       "memberName": "yourTurn",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 808,
-                      "src": "347:11:7",
+                      "src": "341:11:7",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$__$returns$_t_string_memory_ptr_$",
                         "typeString": "function () view external returns (string memory)"
@@ -286,7 +286,7 @@
                     "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "347:13:7",
+                    "src": "341:13:7",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -296,17 +296,17 @@
                   "functionReturnParameters": 815,
                   "id": 826,
                   "nodeType": "Return",
-                  "src": "340:20:7"
+                  "src": "334:20:7"
                 }
               ]
             },
-            "functionSelector": "806b6955",
+            "functionSelector": "68874f1f",
             "id": 828,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
-            "name": "callFriendContract",
-            "nameLocation": "206:18:7",
+            "name": "callContract",
+            "nameLocation": "206:12:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
               "id": 812,
@@ -317,10 +317,10 @@
                   "id": 811,
                   "mutability": "mutable",
                   "name": "addr",
-                  "nameLocation": "234:4:7",
+                  "nameLocation": "228:4:7",
                   "nodeType": "VariableDeclaration",
                   "scope": 828,
-                  "src": "226:12:7",
+                  "src": "220:12:7",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -331,7 +331,7 @@
                     "id": 810,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "226:7:7",
+                    "src": "220:7:7",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -341,7 +341,7 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "225:14:7"
+              "src": "219:14:7"
             },
             "returnParameters": {
               "id": 815,
@@ -355,7 +355,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 828,
-                  "src": "263:13:7",
+                  "src": "257:13:7",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -366,7 +366,7 @@
                     "id": 813,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "263:6:7",
+                    "src": "257:6:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -375,21 +375,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "262:15:7"
+              "src": "256:15:7"
             },
             "scope": 829,
-            "src": "197:169:7",
+            "src": "197:163:7",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
         "scope": 830,
-        "src": "172:197:7",
+        "src": "172:191:7",
         "usedErrors": []
       }
     ],
-    "src": "37:332:7"
+    "src": "37:326:7"
   },
   "compiler": {
     "name": "solc",
@@ -397,7 +397,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-12-05T14:50:33.828Z",
+  "updatedAt": "2022-12-14T08:01:55.405Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
